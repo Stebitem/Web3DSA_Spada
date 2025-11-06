@@ -1,33 +1,25 @@
 # Web3DSA_Spada
 
-Proyecto Django para la consigna: gestión de piezas impresas en 3D.
+Proyecto desarrollado para el curso de **Python Flex en Coderhouse**.  
 
-## Requisitos de la consigna cubiertos
-- Herencia de templates (base.html)
-- Modelos: Categoria, Material, Pieza3D
-- Formularios para las 3 clases
-- Vista con listado de objetos (piezas)
-- Barra de búsqueda en el listado
-- README con orden de pruebas
-- .gitignore, requirements.txt
+# Descripción del proyecto
 
-## Cómo probar
-1. Crear y activar virtualenv:
-   python -m venv .venv
-   .venv\Scripts\activate
-2. Instalar dependencias:
-   pip install -r requirements.txt
-3. Migrar y crear superuser si querés:
-   python manage.py migrate
-   python manage.py createsuperuser
-4. Ejecutar servidor:
-   python manage.py runserver
-5. Abrir: http://127.0.0.1:8000/
+**Web3DSA_Spada** es una web basada en mi emprendimiento de **impresión 3D**, donde se pueden registrar **piezas**, **categorías** y **materiales** utilizados en los trabajos de impresión.
 
-## Rutas principales
-- / -> inicio
-- /piezas/ -> listado y búsqueda
-- /piezas/nuevo/ -> crear pieza
-- /categoria/nuevo/ -> crear categoría
-- /material/nuevo/ -> crear material
+La aplicación permite:
+- Crear nuevas **piezas 3D** (nombre, descripción, precio, stock, categoría y material).
+- Registrar **categorías** (por ejemplo: decoración, herramientas, juguetes).
+- Registrar **materiales** (por ejemplo: PLA, PETG, ABS).
+- Listar todas las piezas creadas.
+- Buscar piezas por nombre desde una barra de búsqueda.
+- Usar herencia de plantillas para mantener una navegación coherente en todo el sitio.
+
+---
+
+# Tecnologías
+
+- Python 3.13  
+- Django 5.2.8  
+- HTML / CSS (con Bootstrap)
+- SQLite3 (base de datos por defecto)
 
