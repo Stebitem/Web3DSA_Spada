@@ -1,0 +1,9 @@
+{% extends 'piezas3d/base.html' %}
+{% block title %}Inicio - 3DSA{% endblock %}
+{% block content %}
+  <div class="p-4 bg-light rounded">
+    <h1>Bienvenido a 3DSA</h1>
+    <p>Gestión de piezas impresas en 3D — crea piezas, materiales y categorías.</p>
+    <a class="btn btn-primary" href="{% url 'listar_piezas' %}">Ver Piezas</a>
+  </div>
+{% endblock %}
